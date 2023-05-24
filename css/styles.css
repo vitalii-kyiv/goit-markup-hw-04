@@ -329,6 +329,40 @@ img {
   color: var(--second-text-color);
   max-width: 264px;
 }
+/**PORTFOLIO-------------- COSTUMERS------------------ */
+.customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.container {
+}
+.customers-title {
+  margin-bottom: 72px;
+}
+
+.customers-list {
+  display: flex;
+  gap: 24px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.second-title {
+}
+.list {
+}
+.costumers-list-item {
+}
+.costumers-item-link {
+  display: inline-block;
+  height: 88px;
+  width: 168px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+.custumers-link-svg {
+}
 
 /**PORTFOLIO-------------- MAIN------------------ */
 .filter {
