@@ -154,7 +154,7 @@ img {
 /**MAIN-------------- HERO------------------ */
 .hero {
   height: 600px;
-  max-width: 1600px;
+  max-width: 1440px;
   background-color: var(--second-background-color);
   padding-top: 188px;
   padding-bottom: 188px;
