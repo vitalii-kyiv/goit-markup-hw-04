@@ -308,6 +308,32 @@ img {
 
 .team-item-text {
   color: var(--first-text-color);
+  margin-bottom: 8px;
+}
+
+.team-social-list {
+  display: flex;
+  gap: 24px;
+}
+
+.list {
+}
+.team-social-item {
+  width: 40px;
+  height: 40px;
+  background-color: var(--logo-color);
+  border-radius: 100%;
+}
+.team-social-link {
+  width: 100%;
+  height: 100%;
+}
+.link {
+}
+.team-item-icon {
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 /**PORTFOLIO-------------- COSTUMERS------------------ */
@@ -404,6 +430,7 @@ img {
   width: 40px;
   height: 40px;
   background-color: var(--logo-color);
+  border-radius: 100%;
 }
 .footer-list-link {
 }
