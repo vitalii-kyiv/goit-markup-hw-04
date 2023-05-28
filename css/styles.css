@@ -9,6 +9,7 @@
   --third-text-color: #4d5ae5;
   --first-btn-color: #ffffff;
   --second-btn-color: #404bbf;
+  --third-btn-color: #8e8f99;
   --logo-color: #4d5ae5;
 }
 
@@ -319,6 +320,7 @@ img {
 .team-social-list {
   display: flex;
   gap: 24px;
+  justify-content: center;
 }
 
 .list {
@@ -344,6 +346,7 @@ img {
 .link {
 }
 .team-item-icon {
+  fill: var(--third-background-color);
 }
 
 /**PORTFOLIO-------------- COSTUMERS------------------ */
@@ -382,8 +385,17 @@ img {
   width: 100%;
   border: 1px solid #8e8f99;
   border-radius: 4px;
+  color: var(--third-background-color);
 }
+
+.costumers-item-link:hover,
+.costumers-item-link:focus {
+  border-color: var(--second-btn-color);
+  color: var(--second-btn-color);
+}
+
 .custumers-link-svg {
+  fill: currentColor;
 }
 
 /**-------------- FOOTER------------------ */
@@ -455,9 +467,16 @@ img {
   align-items: center;
   justify-content: center;
 }
+
+.footer-list-link:focus,
+.footer-list-link:hover {
+  background-color: #31d0aa;
+}
+
 .link {
 }
 .footer-item-icon {
+  fill: var(--third-background-color);
 }
 
 .footerlist-link {
