@@ -385,7 +385,7 @@ img {
   width: 100%;
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  color: var(--third-background-color);
+  color: var(--third-btn-color);
 }
 
 .costumers-item-link:hover,
@@ -545,14 +545,18 @@ img {
 .examples-list-conteiner:hover,
 .examples-list-conteiner:focus {
   border: 1px solid var(--second-text-color);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .examples-item {
 }
 
 .examples-link {
+  display: block;
+}
+.examples-link:hover,
+.examples-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .link {
