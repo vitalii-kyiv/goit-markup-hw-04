@@ -70,7 +70,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-btn btn-text" type="button">Order Service</button>
+          <button class="hero-btn btn-text" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -582,14 +584,15 @@
       </div>
     </footer>
     <!-- !!!BACKDROP!! --------------------------------------------------------------------------->
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-close-btn" type="button">
+        <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-modal_close"></use>
           </svg>
         </button>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
