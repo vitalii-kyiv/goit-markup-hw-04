@@ -11,9 +11,7 @@
   --active-state: #404bbf;
   --shadows: #2e2f42;
   --success-state: #31d0aa;
-  --animation: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  --animation-bg: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  --animation-bc: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -229,7 +227,7 @@ img {
   height: 56px;
   border-radius: 4px;
   border: none;
-  transition: var(--animation-bg);
+  transition: background-color var(--animation);
 }
 
 .hero-btn:hover,
@@ -342,8 +340,9 @@ img {
   height: 40px;
   background-color: var(--accent);
   border-radius: 50%;
-  transition: var(--animation-bg);
+  transition: background-color var(--animation);
 }
+
 .team-social-link:hover,
 .team-social-link:focus {
   background-color: var(--active-state);
@@ -390,7 +389,7 @@ img {
   border: 1px solid var(--help-text);
   border-radius: 4px;
   color: var(--help-text);
-  transition: var(--animation-bc);
+  transition: color var(--animation), border-color var(--animation);
 }
 .costumers-list-link:focus,
 .costumers-list-link:hover {
@@ -468,7 +467,7 @@ img {
   align-items: center;
   background-color: var(--accent);
   border-radius: 50%;
-  transition: var(--animation-bg);
+  transition: background-color var(--animation);
 }
 
 .footer-social-link:hover,
@@ -491,8 +490,7 @@ img {
   height: 100%;
   width: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity var(--animation), visibility var(--animation);
 }
 /* <!-- !!!MODAL!! ---------------------------------------------------------------------------> */
 .modal {
@@ -506,7 +504,7 @@ img {
   background-color: var(--modal-background);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--animation);
 }
 
 .modal-close-btn {
@@ -523,7 +521,7 @@ img {
   background-color: var(--secondary-light-background);
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  transition: var(--animation-bg);
+  transition: background-color var(--animation), border var(--animation);
 }
 .modal-close-btn:hover,
 .modal-close-btn:focus {
@@ -533,7 +531,7 @@ img {
 
 .modal-close-icon {
   fill: var(--modal-overlay);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--animation);
 }
 .modal-close-btn:hover .modal-close-icon,
 .modal-close-btn:focus .modal-close-icon {
