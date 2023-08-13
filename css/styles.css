@@ -64,7 +64,6 @@ img {
 
 .first-title {
   font-size: 36px;
-
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
@@ -139,7 +138,6 @@ img {
 }
 .header-list-link {
   position: relative;
-
   color: var(--shadows);
   display: block;
   font-style: normal;
@@ -148,7 +146,7 @@ img {
   letter-spacing: 0.32px;
   padding-top: 24px;
   padding-bottom: 24px;
-  transition: var(--animation);
+  transition: transition var(--animation), color var(--animation);
 }
 
 .header-list-link.current::after {
@@ -567,6 +565,8 @@ img {
   padding: 12px 24px;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
+  transition: color var(--animation), background-color var(--animation),
+    border-color var(--animation), box-shadow var(--animation);
 }
 
 .examples-filter-btn:hover,
@@ -574,6 +574,8 @@ img {
   background-color: var(--active-state);
   color: var(--white-background);
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .examples-list {
   display: flex;
@@ -584,9 +586,17 @@ img {
   width: calc((100% - 48px) / 3);
 }
 .examples-list-link {
+  display: block;
+  transition: box-shadow var(--animation);
+}
+.examples-list-link:hover,
+.examples-list-link:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.examples-list-link:hover .examples-overlay {
+.examples-list-link:hover .examples-overlay,
+.examples-list-link:focus .examples-overlay {
   transform: translateY(0);
 }
 .examples-overlay-wrap {
@@ -618,4 +628,5 @@ img {
   margin-bottom: 8px;
 }
 .exampes-list-text {
+  transition: transform var(--animation);
 }
