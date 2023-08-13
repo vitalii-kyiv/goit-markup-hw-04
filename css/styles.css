@@ -146,7 +146,7 @@ img {
   letter-spacing: 0.32px;
   padding-top: 24px;
   padding-bottom: 24px;
-  transition: transition var(--animation), color var(--animation);
+  transition: color var(--animation);
 }
 
 .header-list-link.current::after {
@@ -178,7 +178,7 @@ img {
 .header-address-item {
 }
 .header-address-link {
-  transition: var(--animation);
+  transition: color var(--animation);
 }
 
 .header-address-link:hover,
@@ -613,6 +613,7 @@ img {
   color: var(--light-background);
   background-color: var(--accent);
   transform: translateY(100%);
+  transition: transform var(--animation);
 }
 
 .examples-list-image {
@@ -628,5 +629,4 @@ img {
   margin-bottom: 8px;
 }
 .exampes-list-text {
-  transition: transform var(--animation);
 }
